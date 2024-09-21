@@ -1,0 +1,26 @@
+#include<stdio.h>
+struct BANKDETAILS{
+    int accountnumber;
+    char accountholder[50];
+    char accounttype[20];
+    float balance;
+};
+int main()
+{
+    struct BANKDETAILS sbi;
+        sbi.balance=50000;
+        printf("\n Enter the 10 digit Acount Number :");
+        scanf("%d",&sbi.accountnumber);
+        printf("\n Enter the Acount Holder Name : ");
+        scanf("%s",&sbi.accountholder);
+        printf("\n Enter the Acount Type (Savings/Current) : ");
+        scanf("%s",&sbi.accounttype);
+        printf("__________________________________________________________________________\n");
+        printf("Acount Number : %d\n",sbi.accountnumber);
+        printf("Acount Holder Name : %s\n",sbi.accountholder);
+        printf("Acount Type :%s\n",sbi.accounttype);
+        printf("Total Balance : %.2f\n",sbi.balance);
+        return 0;
+        
+        
+}
